@@ -1,0 +1,56 @@
+﻿<?xml version="1.0"?>
+<!--所有的长度以象素为单位，如果要转化为box2d的尺寸，需除以PTM_RATIO(32)-->
+<!--每个myObj可以包含0到1个body和1个sprite-->
+<!--对于没有body的obj，sprite的pos才起作用-->
+<myObjList>
+    <myObj name="shotBall" sceneNodeType="scene_rolling" tag="tag_shotBall_left">
+        <!--box2d body-->
+        <body>
+            <bodyType>dynamicBody</bodyType>
+            <fixture>
+                <shape>
+                    <shapeType>circle</shapeType>
+                    <c>0 0</c>
+                    <r>20</r>
+                    <rxy>0 0</rxy>
+                    <rot>0</rot>
+                    <vertices></vertices>
+                </shape>
+                <friction>0.1</friction>
+                <restitution>0.7</restitution>
+                <density>50</density>
+                <isSensor>0</isSensor>
+                <filter>
+                    <categoryBits>8</categoryBits><!--0x0008-->
+                    <maskBits>65531</maskBits><!--0xFFFF & ~0x0004-->
+                    <groupIndex>-1</groupIndex>
+                </filter>
+            </fixture>
+            <pos>0 0</pos>
+            <rot>0</rot>
+            <gravityScale>0</gravityScale>
+        </body>
+        <!--cocos2d-x sprite-->
+        <sprite>
+            <useTexRect>0</useTexRect><!--相当于rect(0,0,texWidth,texHeight)-->
+            <rect>0 0 40 40</rect><!--当使useTexRect为false时才有效-->
+            <tex>
+                <texImage>data/global/tex/shotBall.png</texImage>
+                <wrapS>clamp_to_edge</wrapS>
+                <wrapT>clamp_to_edge</wrapT>
+                <specifyTexCoord>1</specifyTexCoord>
+                <quadTexCoord>
+                    <tl>0 0</tl>
+                    <tr>1 0</tr>
+                    <bl>0 1</bl>
+                    <br>1 1</br>
+                </quadTexCoord>
+            </tex>
+            <zOrder>0</zOrder>
+            <anchorPoint>0.5 0.5</anchorPoint>
+            <pos>0 0</pos>
+        </sprite>
+    </myObj>
+
+</myObjList>
+

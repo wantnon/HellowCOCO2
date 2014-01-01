@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="200" height="20" tilewidth="64" tileheight="64">
+ <tileset firstgid="1" name="roadStoneWhole" tilewidth="64" tileheight="64">
+  <image source="roadStoneWhole.png" width="1024" height="128"/>
+  <tile id="1">
+   <properties>
+    <property name="polygon" value="(0,0)(2,0)(0,1)"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="polygon" value="use(-1,0)"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="polygon" value="(0,0)(1,1)(0,1)"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="polygon" value="use(0,1)"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="polygon" value="use(0,1)"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="polygon" value="(0,0)(2,1)(0,1)"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="polygon" value="use(-1,0)"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="polygon" value="(0,0)(1,0)(0,1)"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="polygon" value="(1,0)(1,1)(0,1)"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="polygon" value="(0,0)(2,0)(2,1)"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="polygon" value="use(-1,0)"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="polygon" value="(0,0)(1,0)(1,1)"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="polygon" value="use(0,1)"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="polygon" value="use(0,1)"/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="polygon" value="(0,0)(1,2)(0,2)"/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="polygon" value="(1,0)(1,2)(0,2)"/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="polygon" value="(2,0)(2,1)(0,1)"/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="polygon" value="use(-1,0)"/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="polygon" value="(0,0)(1,0)(0,2)"/>
+   </properties>
+  </tile>
+  <tile id="31">
+   <properties>
+    <property name="polygon" value="(0,0)(1,0)(1,2)"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="33" name="things" tilewidth="64" tileheight="64">
+  <image source="things.png" width="1024" height="128"/>
+ </tileset>
+ <layer name="groundLayer" width="200" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztmd1uwyAMhem2dNP+b9rtrnn/pxzRxGQxgw2YkLTnkyxVKSBic2wgzgEAAAAAAAAAAADY8OrtzdvB2/PguQCwJd7dry6oaTVCdRXbnbd768mCJLcci/h9reC0EeyjoW+N1kAdOV0gFm3kfHnJ9PsU+vbKX1yOaHm2Z0p0IcUileuuve5I1OabWdG3h7+5tX1g/tO22yva2m1lt6qTo5N9E++zaGwevT0x4355+y4YUwv0sb42tlR3157L2ck+ofssGpsHxfgpneT2bjk4/7Q82xO1+ykr08R7y3D+0+TpF9ffV5xOgI6RukjtD3pjvUZSNZfL0+FsTbUj7Yes8gjV4jVQm5NKQL1Yl9mltQP0lOSkFqT6Htbxcpacot8leQ/a+B9T3IfXIZ2RrWsIp5FlDR9Jm+UseWJ+L0yJMUbsp1L7xZa1yI1ZOl7qm8We7u5G39NrzwKXRHvreZ6V7YJWcvVk4rv+Ib275t2kvFLjn5Zv3JRZmJtkGj2GuebaBj+X5ljNvWYPnfS4Tx1dt2ndCbo4cQ1d+f0A924WY9SMqd3rWsU4t/7i+sStfzoP7dxr7m8s1l/ve6ORGqF1x0oXqdjXrr2cf0rG1PjZOracTuaoDV3/KV9LtOi6tJaM+O62xb2tRV4Isf8BWvUMrw==
+  </data>
+ </layer>
+ <layer name="thingLayer_tile" width="200" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt10kOwjAMheFcpVCGLYjh/jfDVRdsaBZWHrHT/5O8itRWST2kFAAAAAAAAAAAAABYzRanjbXJ4iB459niIngu0NrD4rmxdrO4C975sng3fma0nLv2/oCiq297d+z9AQ6KnMtOVd/2ImMeAP/Wug+Td1+1+1000WZUr9Z7nrkPRz/T2v0umlFm1Ex7ruY5U1V/i3AnBxaefzHy3Be9DwI9jTLb1GrQr5oWuWYBXopZklzBiDL/1x/FnAmu
+  </data>
+ </layer>
+ <objectgroup name="thingLayer_polygon" width="200" height="20">
+  <object name="ball_small" type="ellipse" x="449" y="769" width="61" height="61">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="6.5"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object name="stone" type="polygon" x="695" y="831">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="10"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <polygon points="8,-1 -120,0 -120,129 11,129"/>
+  </object>
+  <object name="ball_big" type="ellipse" x="513" y="577" width="125" height="124">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="6.5"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object name="ball_small" type="ellipse" x="1857" y="833" width="61" height="61">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="6.5"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object name="ball_small" type="ellipse" x="833" y="704" width="61" height="61">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="6.5"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object name="stone" type="polygon" x="1081" y="576">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="10"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <polygon points="8,-1 -120,0 -120,129 11,129"/>
+  </object>
+  <object name="pumkin_big" type="polygon" x="2486" y="576">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="10"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <polygon points="1,32 -60,9 -109,34 -119,73 -99,104 -14,108 11,75"/>
+  </object>
+  <object name="pumkin_big" type="polygon" x="3831" y="642">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="10"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <polygon points="1,32 -60,9 -109,34 -119,73 -99,104 -14,108 11,75"/>
+  </object>
+  <object name="pumkin_small" type="polygon" x="5922" y="914">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="10"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <polygon points="-41,56 -91,56 -101,76 -93,94 -43,96 -32,74"/>
+  </object>
+  <object name="pumkin_small" type="polygon" x="6114" y="594">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="10"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <polygon points="-41,56 -91,56 -101,76 -93,94 -43,96 -32,74"/>
+  </object>
+  <object name="pumkin_small" type="polygon" x="9698" y="1106">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="10"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <polygon points="-41,56 -91,56 -101,76 -93,94 -43,96 -32,74"/>
+  </object>
+  <object name="pumkin_small" type="polygon" x="10529" y="1042">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="10"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <polygon points="-41,56 -91,56 -101,76 -93,94 -43,96 -32,74"/>
+  </object>
+  <object name="pumkin_big" type="polygon" x="6901" y="1024">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="10"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <polygon points="1,32 -60,9 -109,34 -119,73 -99,104 -14,108 11,75"/>
+  </object>
+  <object name="pumkin_big" type="polygon" x="9013" y="833">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="10"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <polygon points="1,32 -60,9 -109,34 -119,73 -99,104 -14,108 11,75"/>
+  </object>
+  <object name="ball_big" type="ellipse" x="6145" y="834" width="125" height="124">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="6.5"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object name="ball_big" type="ellipse" x="12097" y="834" width="125" height="124">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="6.5"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object name="ball_small" type="ellipse" x="4290" y="1026" width="61" height="61">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="6.5"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object name="ball_small" type="ellipse" x="4418" y="962" width="61" height="61">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="6.5"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object name="ball_small" type="ellipse" x="9794" y="1218" width="61" height="61">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="6.5"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object name="ball_small" type="ellipse" x="9986" y="1090" width="61" height="61">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="6.5"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object name="ball_small" type="ellipse" x="10754" y="1090" width="61" height="61">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="6.5"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object name="ball_small" type="ellipse" x="10946" y="1154" width="61" height="61">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="6.5"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object name="pumkin_big" type="polygon" x="3701" y="898">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="10"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <polygon points="1,32 -60,9 -109,34 -119,73 -99,104 -14,108 11,75"/>
+  </object>
+  <object name="pumkin_small" type="polygon" x="3553" y="977">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="10"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <polygon points="-41,56 -91,56 -101,76 -93,94 -43,96 -32,74"/>
+  </object>
+  <object name="stone" type="polygon" x="8246" y="640">
+   <properties>
+    <property name="bodyType" value="dynamicBody"/>
+    <property name="categoryBits" value="1"/>
+    <property name="density" value="10"/>
+    <property name="friction" value="0.5"/>
+    <property name="gravityScale" value="1"/>
+    <property name="groupIndex" value="0"/>
+    <property name="isSensor" value="0"/>
+    <property name="maskBits" value="65535"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <polygon points="8,-1 -120,0 -120,129 11,129"/>
+  </object>
+ </objectgroup>
+</map>

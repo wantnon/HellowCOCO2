@@ -1,0 +1,76 @@
+﻿<?xml version="1.0"?>
+<!--所有的长度以象素为单位，如果要转化为box2d的尺寸，需除以PTM_RATIO(32)-->
+<!--每个myObj可以包含0到1个body和1个sprite-->
+<!--对于没有body的obj，sprite的pos才起作用-->
+<myObjList>
+    <myObj name="skyBackGround" sceneNodeType="scene_nonRolling">
+        <!--box2d body-->
+        <!--cocos2d-x sprite-->
+        <sprite>
+            <useTexRect>1</useTexRect><!--相当于rect(0,0,texWidth,texHeight)-->
+            <rect>0 0 0 0</rect><!--当useTexRect为false时才有效-->
+            <tex>
+                <texImage>data/global/tex/skyBackGround.png</texImage>
+                <wrapS>clamp_to_edge</wrapS>
+                <wrapT>clamp_to_edge</wrapT>
+                <specifyTexCoord>0</specifyTexCoord>
+                <quadTexCoord>
+                    <tl>0 0</tl>
+                    <tr>1 0</tr>
+                    <bl>0 1</bl>
+                    <br>1 1</br>
+                </quadTexCoord>
+            </tex>
+            <zOrder>-1000</zOrder>
+            <anchorPoint>0 0</anchorPoint>
+            <pos>0 0</pos>
+        </sprite>
+    </myObj>
+    <myObj name="backGround" sceneNodeType="scene_rolling" tag="tag_backGround">
+        <!--box2d body-->
+        <!--cocos2d-x sprite-->
+        <sprite>
+            <useTexRect>1</useTexRect><!--相当于rect(0,0,texWidth,texHeight)-->
+            <rect>0 0 0 0</rect><!--当useTexRect为false时才有效-->
+            <tex>
+                <texImage>data/global/tex/backGround.png</texImage>
+                <wrapS>clamp_to_edge</wrapS>
+                <wrapT>clamp_to_edge</wrapT>
+                <specifyTexCoord>0</specifyTexCoord>
+                <quadTexCoord>
+                    <tl>0 0</tl>
+                    <tr>1 0</tr>
+                    <bl>0 1</bl>
+                    <br>1 1</br>
+                </quadTexCoord>
+            </tex>
+            <zOrder>-1</zOrder>
+            <anchorPoint>0 0</anchorPoint>
+            <pos>0 0</pos>
+        </sprite>
+    </myObj>
+    <myObj name="backGround2" sceneNodeType="scene_rolling" tag="tag_backGround2">
+        <!--box2d body-->
+        <!--cocos2d-x sprite-->
+        <sprite>
+            <useTexRect>1</useTexRect><!--相当于rect(0,0,texWidth,texHeight)-->
+            <rect>0 0 0 0</rect><!--当useTexRect为false时才有效-->
+            <tex>
+                <texImage>data/global/tex/backGround.png</texImage>
+                <wrapS>clamp_to_edge</wrapS>
+                <wrapT>clamp_to_edge</wrapT>
+                <specifyTexCoord>0</specifyTexCoord>
+                <quadTexCoord>
+                    <tl>0 0</tl>
+                    <tr>1 0</tr>
+                    <bl>0 1</bl>
+                    <br>1 1</br>
+                </quadTexCoord>
+            </tex>
+            <zOrder>-1</zOrder>
+            <anchorPoint>0 0</anchorPoint>
+            <pos>0 0</pos>
+        </sprite>
+    </myObj>
+</myObjList>
+

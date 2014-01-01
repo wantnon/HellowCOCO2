@@ -1,0 +1,366 @@
+﻿<?xml version="1.0"?>
+<!--所有的长度以象素为单位，如果要转化为box2d的尺寸，需除以PTM_RATIO(32)-->
+<!--每个myObj可以包含0到1个body和1个sprite-->
+<!--对于没有body的obj，sprite的pos才起作用-->
+<myObjList>
+    <myObj name="groundBlock0" sceneNodeType="scene_rolling">
+        <!--box2d body-->
+        <body>
+            <bodyType>staticBody</bodyType>
+            <fixture>
+                <shape>
+                    <shapeType>polygon</shapeType>
+                    <c>0 0</c>
+                    <r>0</r>
+                    <rxy>576 96</rxy>
+                    <rot>0</rot>
+                    <vertices></vertices>
+                </shape>
+                <friction>0.5</friction>
+                <restitution>0</restitution>
+                <density>0</density>
+                <isSensor>0</isSensor>
+                <filter>
+                    <categoryBits>1</categoryBits><!--0x0001-->
+                    <maskBits>65535</maskBits><!--0xFFFF-->
+                    <groupIndex>0</groupIndex>
+                </filter>
+            </fixture>
+            <pos>192 32</pos>
+            <rot>0</rot>
+            <gravityScale>1</gravityScale>
+        </body>
+        <!--cocos2d-x sprite-->
+        <sprite>
+            <useTexRect>0</useTexRect><!--相当于rect(0,0,texWidth,texHeight)-->
+            <rect>0 0 1152 192</rect><!--当使useTexRect为false时才有效-->
+            <tex>
+                <texImage>data/global/tex/roadStone.png</texImage>
+                <wrapS>repeat</wrapS>
+                <wrapT>repeat</wrapT>
+                <specifyTexCoord>0</specifyTexCoord>
+                <quadTexCoord>
+                    <tl>0 0</tl>
+                    <tr>0 0</tr>
+                    <bl>0 0</bl>
+                    <br>0 0</br>
+                </quadTexCoord>
+            </tex>
+            <zOrder>0</zOrder>
+            <anchorPoint>0.5 0.5</anchorPoint>
+            <pos>0 0</pos>
+        </sprite>
+    </myObj>
+    <myObj name="slope0" sceneNodeType="scene_rolling">
+        <!--box2d body-->
+        <body>
+            <bodyType>staticBody</bodyType>
+            <fixture>
+                <shape>
+                    <shapeType>polygon</shapeType>
+                    <c>0 0</c>
+                    <r>0</r>
+                    <rxy>0 0</rxy>
+                    <rot>0</rot>
+                    <vertices>0 0 192 0 0 192</vertices>
+                </shape>
+                <friction>0.5</friction>
+                <restitution>0</restitution>
+                <density>0</density>
+                <isSensor>0</isSensor>
+                <filter>
+                    <categoryBits>1</categoryBits><!--0x0001-->
+                    <maskBits>65535</maskBits><!--0xFFFF-->
+                    <groupIndex>0</groupIndex>
+                </filter>
+            </fixture>
+            <pos>768 -64</pos>
+            <rot>0</rot>
+            <gravityScale>1</gravityScale>
+        </body>
+        <!--cocos2d-x sprite-->
+        <sprite>
+            <useTexRect>0</useTexRect><!--相当于rect(0,0,texWidth,texHeight)-->
+            <rect>0 0 192 192</rect><!--当useTexRect为false时才有效-->
+            <tex>
+                <texImage>data/global/tex/slope.png</texImage>
+                <wrapS>clamp_to_edge</wrapS>
+                <wrapT>clamp_to_edge</wrapT>
+                <specifyTexCoord>0</specifyTexCoord>
+                <quadTexCoord>
+                    <tl>0 0</tl>
+                    <tr>0 0</tr>
+                    <bl>0 0</bl>
+                    <br>0 0</br>
+                </quadTexCoord>
+            </tex>
+            <zOrder>0</zOrder>
+            <anchorPoint>0 0</anchorPoint>
+            <pos>0 0</pos>
+        </sprite>
+    </myObj>
+    <myObj name="platform0" sceneNodeType="scene_rolling">
+        <!--box2d body-->
+        <body>
+            <bodyType>staticBody</bodyType>
+            <fixture>
+                <shape>
+                    <shapeType>polygon</shapeType>
+                    <c>0 0</c>
+                    <r>0</r>
+                    <rxy>64 32</rxy>
+                    <rot>0</rot>
+                    <vertices></vertices>
+                </shape>
+                <friction>0.5</friction>
+                <restitution>0</restitution>
+                <density>0</density>
+                <isSensor>0</isSensor>
+                <filter>
+                    <categoryBits>1</categoryBits><!--0x0001-->
+                    <maskBits>65535</maskBits><!--0xFFFF-->
+                    <groupIndex>0</groupIndex>
+                </filter>
+            </fixture>
+            <pos>310 450</pos>
+            <rot>0</rot>
+            <gravityScale>1</gravityScale>
+        </body>
+        <!--cocos2d-x sprite-->
+        <sprite>
+            <useTexRect>0</useTexRect><!--相当于rect(0,0,texWidth,texHeight)-->
+            <rect>0 0 128 64</rect><!--当useTexRect为false时才有效-->
+            <tex>
+                <texImage>data/global/tex/roadStone.png</texImage>
+                <wrapS>repeat</wrapS>
+                <wrapT>repeat</wrapT>
+                <specifyTexCoord>0</specifyTexCoord>
+                <quadTexCoord>
+                    <tl>0 0</tl>
+                    <tr>0 0</tr>
+                    <bl>0 0</bl>
+                    <br>0 0</br>
+                </quadTexCoord>
+            </tex>
+            <zOrder>0</zOrder>
+            <anchorPoint>0.5 0.5</anchorPoint>
+            <pos>0 0</pos>
+        </sprite>
+    </myObj>
+    <myObj name="platform1" sceneNodeType="scene_rolling">
+        <!--box2d body-->
+        <body>
+            <bodyType>staticBody</bodyType>
+            <fixture>
+                <shape>
+                    <shapeType>polygon</shapeType>
+                    <c>0 0</c>
+                    <r>0</r>
+                    <rxy>32 32</rxy>
+                    <rot>0</rot>
+                    <vertices></vertices>
+                </shape>
+                <friction>0.5</friction>
+                <restitution>0</restitution>
+                <density>0</density>
+                <isSensor>0</isSensor>
+                <filter>
+                    <categoryBits>1</categoryBits><!--0x0001-->
+                    <maskBits>65535</maskBits><!--0xFFFF-->
+                    <groupIndex>0</groupIndex>
+                </filter>
+            </fixture>
+            <pos>90 300</pos>
+            <rot>0</rot>
+            <gravityScale>1</gravityScale>
+        </body>
+        <!--cocos2d-x sprite-->
+        <sprite>
+            <useTexRect>0</useTexRect><!--相当于rect(0,0,texWidth,texHeight)-->
+            <rect>0 0 64 64</rect><!--当useTexRect为false时才有效-->
+            <tex>
+                <texImage>data/global/tex/roadStone.png</texImage>
+                <wrapS>repeat</wrapS>
+                <wrapT>repeat</wrapT>
+                <specifyTexCoord>0</specifyTexCoord>
+                <quadTexCoord>
+                    <tl>0 0</tl>
+                    <tr>0 0</tr>
+                    <bl>0 0</bl>
+                    <br>0 0</br>
+                </quadTexCoord>
+            </tex>
+            <zOrder>0</zOrder>
+            <anchorPoint>0.5 0.5</anchorPoint>
+            <pos>0 0</pos>
+        </sprite>
+    </myObj>
+    <myObj name="stone0" sceneNodeType="scene_rolling">
+        <!--box2d body-->
+        <body>
+            <bodyType>dynamicBody</bodyType>
+            <fixture>
+                <shape>
+                    <shapeType>polygon</shapeType>
+                    <c>0 0</c>
+                    <r>0</r>
+                    <rxy>96 96</rxy>
+                    <rot>0</rot>
+                    <vertices></vertices>
+                </shape>
+                <friction>0.5</friction>
+                <restitution>0</restitution>
+                <density>10</density>
+                <isSensor>0</isSensor>
+                <filter>
+                    <categoryBits>1</categoryBits><!--0x0001-->
+                    <maskBits>65535</maskBits><!--0xFFFF-->
+                    <groupIndex>0</groupIndex>
+                </filter>
+            </fixture>
+            <pos>-100 150</pos>
+            <rot>0</rot>
+            <gravityScale>1</gravityScale>
+        </body>
+        <!--cocos2d-x sprite-->
+        <sprite>
+            <useTexRect>0</useTexRect><!--相当于rect(0,0,texWidth,texHeight)-->
+            <rect>0 0 192 192</rect><!--当useTexRect为false时才有效-->
+            <tex>
+                <texImage>data/global/tex/stone.png</texImage>
+                <wrapS>clamp_to_edge</wrapS>
+                <wrapT>clamp_to_edge</wrapT>
+                <specifyTexCoord>1</specifyTexCoord>
+                <quadTexCoord>
+                    <tl>0 0</tl>
+                    <tr>1 0</tr>
+                    <bl>0 1</bl>
+                    <br>1 1</br>
+                </quadTexCoord>
+            </tex>
+            <zOrder>0</zOrder>
+            <anchorPoint>0.5 0.5</anchorPoint>
+            <pos>0 0</pos>
+        </sprite>
+    </myObj>
+    <myObj name="ball0" sceneNodeType="scene_rolling">
+        <!--box2d body-->
+        <body>
+            <bodyType>dynamicBody</bodyType>
+            <fixture>
+                <shape>
+                    <shapeType>circle</shapeType>
+                    <c>0 0</c>
+                    <r>50</r>
+                    <rxy>0 0</rxy>
+                    <rot>0</rot>
+                    <vertices></vertices>
+                </shape>
+                <friction>0.5</friction>
+                <restitution>0</restitution>
+                <density>6.5</density>
+                <isSensor>0</isSensor>
+                <filter>
+                    <categoryBits>1</categoryBits><!--0x0001-->
+                    <maskBits>65535</maskBits><!--0xFFFF-->
+                    <groupIndex>0</groupIndex>
+                </filter>
+            </fixture>
+            <pos>180 150</pos>
+            <rot>0</rot>
+            <gravityScale>1</gravityScale>
+        </body>
+        <!--cocos2d-x sprite-->
+        <sprite>
+            <useTexRect>0</useTexRect><!--相当于rect(0,0,texWidth,texHeight)-->
+            <rect>0 0 100 100</rect><!--当useTexRect为false时才有效-->
+            <tex>
+                <texImage>data/global/tex/ball.png</texImage>
+                <wrapS>clamp_to_edge</wrapS>
+                <wrapT>clamp_to_edge</wrapT>
+                <specifyTexCoord>1</specifyTexCoord>
+                <quadTexCoord>
+                    <tl>0 0</tl>
+                    <tr>1 0</tr>
+                    <bl>0 1</bl>
+                    <br>1 1</br>
+                </quadTexCoord>
+            </tex>
+            <zOrder>0</zOrder>
+            <anchorPoint>0.5 0.5</anchorPoint>
+            <pos>0 0</pos>
+        </sprite>
+    </myObj>
+    <myObj name="skyBackGround" sceneNodeType="scene_nonRolling">
+        <!--box2d body-->
+        <!--cocos2d-x sprite-->
+        <sprite>
+            <useTexRect>1</useTexRect><!--相当于rect(0,0,texWidth,texHeight)-->
+            <rect>0 0 0 0</rect><!--当useTexRect为false时才有效-->
+            <tex>
+                <texImage>data/global/tex/skyBackGround.png</texImage>
+                <wrapS>clamp_to_edge</wrapS>
+                <wrapT>clamp_to_edge</wrapT>
+                <specifyTexCoord>0</specifyTexCoord>
+                <quadTexCoord>
+                    <tl>0 0</tl>
+                    <tr>1 0</tr>
+                    <bl>0 1</bl>
+                    <br>1 1</br>
+                </quadTexCoord>
+            </tex>
+            <zOrder>-1000</zOrder>
+            <anchorPoint>0 0</anchorPoint>
+            <pos>0 0</pos>
+        </sprite>
+    </myObj>
+    <myObj name="backGround" sceneNodeType="scene_rolling" tag="tag_backGround">
+        <!--box2d body-->
+        <!--cocos2d-x sprite-->
+        <sprite>
+            <useTexRect>1</useTexRect><!--相当于rect(0,0,texWidth,texHeight)-->
+            <rect>0 0 0 0</rect><!--当useTexRect为false时才有效-->
+            <tex>
+                <texImage>data/global/tex/backGround.png</texImage>
+                <wrapS>clamp_to_edge</wrapS>
+                <wrapT>clamp_to_edge</wrapT>
+                <specifyTexCoord>0</specifyTexCoord>
+                <quadTexCoord>
+                    <tl>0 0</tl>
+                    <tr>1 0</tr>
+                    <bl>0 1</bl>
+                    <br>1 1</br>
+                </quadTexCoord>
+            </tex>
+            <zOrder>-1</zOrder>
+            <anchorPoint>0 0</anchorPoint>
+            <pos>0 0</pos>
+        </sprite>
+    </myObj>
+    <myObj name="backGround2" sceneNodeType="scene_rolling" tag="tag_backGround2">
+        <!--box2d body-->
+        <!--cocos2d-x sprite-->
+        <sprite>
+            <useTexRect>1</useTexRect><!--相当于rect(0,0,texWidth,texHeight)-->
+            <rect>0 0 0 0</rect><!--当useTexRect为false时才有效-->
+            <tex>
+                <texImage>data/global/tex/backGround.png</texImage>
+                <wrapS>clamp_to_edge</wrapS>
+                <wrapT>clamp_to_edge</wrapT>
+                <specifyTexCoord>0</specifyTexCoord>
+                <quadTexCoord>
+                    <tl>0 0</tl>
+                    <tr>1 0</tr>
+                    <bl>0 1</bl>
+                    <br>1 1</br>
+                </quadTexCoord>
+            </tex>
+            <zOrder>-1</zOrder>
+            <anchorPoint>0 0</anchorPoint>
+            <pos>0 0</pos>
+        </sprite>
+    </myObj>
+
+
+</myObjList>
+
